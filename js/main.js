@@ -129,6 +129,28 @@
     });
     
     
+    $("#newsletter-form").submit(function (e) {
+        e.preventDefault();
+        var email = $("#newsletter-email").val();
+    
+        $.ajax({
+            type: "POST",
+            url: "https://biogeodynamics.com/newsletter-mail.php", // Change to your hosted domain
+            data: { email: email },
+            success: function (response) {
+                var data = JSON.parse(response);
+                if (data.success) {
+                    $("#newsletter-message").text(data.success).css("color", "green");
+                } else {
+                    $("#newsletter-message").text(data.error).css("color", "red");
+                }
+            },
+            error: function () {
+                $("#newsletter-message").text("An error occurred. Please try again.").css("color", "red");
+            }
+        });
+    });
+    
 
     
    // Back to top button

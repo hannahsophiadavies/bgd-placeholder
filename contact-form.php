@@ -2,7 +2,7 @@
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // Change to your email address
-    $email_to = "you@yourdomain.com"; 
+    $email_to = "eurobig.ca@gmail.com"; 
     $email_subject = "New Contact Form Submission";
 
     function problem($error)
