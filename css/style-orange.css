@@ -198,7 +198,7 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-    background: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, 0.2));
+    background: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, 0.4));
     background-size: cover;
 }
 
@@ -251,7 +251,7 @@
 
 /*** Single Page Hero Header Start ***/
 .bg-breadcrumb {
-    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../img/breadcrumb-bg.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/breadcrumb-bg.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -633,7 +633,7 @@
 
 /*** Volunteer Start ***/
 .volunteer {
-    background: var(--bs-light);
+    background: rgba(249, 195, 123, .1);
 }
 .volunteer .volunteer-img {
     position: relative;
@@ -671,7 +671,7 @@
 
 /*** Contact Start ***/
 .contact {
-    background: var(--bs-secondary);
+    background: rgba(249, 195, 123, .4);
     border-style: dotted;
     border-color: var(--bs-white);
 }
